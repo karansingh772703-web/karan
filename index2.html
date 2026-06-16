@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Paradise Restaurant</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Menu</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Welcome to Food Paradise Restaurant</h1>
+        <p>Delicious Food Delivered Fresh</p>
+    </section>
+
+    <span class="badge">Best Seller 🔥</span>
+
+    <!-- Main Image -->
+    <img src="https://thumbs.dreamstime.com/b/assorted-restaurant-dishes-wooden-table-overhead-flat-lay-catering-menu-high-quality-photo-417760859.jpg?w=768"
+         alt="Restaurant Food">
+
+    <p>
+        Welcome to our restaurant. We serve delicious food with
+        fresh ingredients and excellent customer service.
+    </p>
+
+    <!-- Popular Dishes -->
+    <h2>Popular Dishes</h2>
+    <ul>
+        <li>Paneer Butter Masala</li>
+        <li>Veg Biryani</li>
+        <li>Pizza</li>
+        <li>Burger</li>
+        <li>Pasta</li>
+        <li>Salad</li>
+        <li>Ice Cream</li>
+        <li>Chocolate Cake</li>
+    </ul>
+
+    <!-- Search -->
+    <input type="text" placeholder="Search Food...">
+
+    <!-- Menu Table -->
+    <h2>Menu Price List</h2>
+
+    <table border="1">
+        <tr>
+            <th>Dish Name</th>
+            <th>Description</th>
+            <th>Price</th>
+        </tr>
+
+        <tr>
+            <td>Paneer Butter Masala</td>
+            <td>Creamy paneer curry with spices</td>
+            <td>₹250</td>
+        </tr>
+
+        <tr>
+            <td>Veg Biryani</td>
+            <td>Rice cooked with vegetables and spices</td>
+            <td>₹200</td>
+        </tr>
+
+        <tr>
+            <td>Pizza</td>
+            <td>Cheesy pizza with fresh toppings</td>
+            <td>₹300</td>
+        </tr>
+
+        <tr>
+            <td>Burger</td>
+            <td>Veg burger with crispy patty</td>
+            <td>₹150</td>
+        </tr>
+
+        <tr>
+            <td>Pasta</td>
+            <td>Italian pasta with tomato sauce</td>
+            <td>₹220</td>
+        </tr>
+
+        <tr>
+            <td>Salad</td>
+            <td>Fresh vegetable salad with dressing</td>
+            <td>₹120</td>
+        </tr>
+
+        <tr>
+            <td>Grilled Sandwich</td>
+            <td>Toasted sandwich with veggies and cheese</td>
+            <td>₹180</td>
+        </tr>
+
+        <tr>
+            <td>Ice Cream</td>
+            <td>Delicious vanilla ice cream</td>
+            <td>₹100</td>
+        </tr>
+
+        <tr>
+            <td>Chocolate Cake</td>
+            <td>Rich chocolate cake with cream</td>
+            <td>₹150</td>
+        </tr>
+    </table>
+
+    <!-- Order Section -->
+    <h2>Place Your Order</h2>
+
+    <input type="text" id="customerName" placeholder="Enter Your Name">
+
+    <br><br>
+
+    <button onclick="placeOrder()" class="btn">
+        Order Now
+    </button>
+
+    <p id="message"></p>
+
+    <!-- Rating -->
+    <h3>Customer Rating</h3>
+    <p>⭐⭐⭐⭐⭐ (4.8/5)</p>
+
+    <!-- Offer -->
+    <div>
+        <h2>Today's Offer</h2>
+        <p>Get 20% OFF on orders above ₹500</p>
+    </div>
+
+    <!-- Food Gallery -->
+    <h2>Food Gallery</h2>
+
+    <img src="https://static.vecteezy.com/system/resources/previews/052/469/629/non_2x/a-delicious-pizza-topped-with-tomatoes-olives-and-basil-served-on-a-wooden-board-photo.jpg"
+         alt="Pizza" width="300">
+
+    <img src="https://i.pinimg.com/736x/b5/0d/22/b50d22aed638664f17fe53e43680d7c8.jpg"
+         alt="Burger" width="300">
+
+    <img src="https://i.pinimg.com/736x/57/58/8b/57588b32c55b721df9710bfe1093fe1f.jpg"
+         alt="Biryani" width="300">
+
+    <!-- Featured Item -->
+    <div class="card">
+        <img src="pizza.jpg" alt="Pizza">
+        <h3>Pizza</h3>
+        <p>Cheesy and Delicious</p>
+        <button>Add to Cart</button>
+    </div>
+
+    <!-- Clock -->
+    <div id="clock"></div>
+
+    <!-- Dark Mode -->
+    <button onclick="document.body.classList.toggle('dark')">
+        Dark Mode
+    </button>
+
+    <!-- Visitors -->
+    <p>Visitors: <span id="count">1000</span></p>
+
+    <!-- Marquee -->
+    <marquee>
+        🚚 Free Delivery on Orders Above ₹500
+    </marquee>
+
+    <!-- Chef -->
+    <h2>Meet Our Chef 👨‍🍳</h2>
+    <p>15+ Years Experience in International Cuisine.</p>
+
+    <!-- Coupon -->
+    <div>
+        Use Code: <b>FOOD20</b> and Get 20% OFF
+    </div>
+
+    <!-- Why Choose Us -->
+    <ul>
+        <li>✅ Fresh Ingredients</li>
+        <li>✅ Fast Delivery</li>
+        <li>✅ Hygienic Kitchen</li>
+        <li>✅ Affordable Prices</li>
+    </ul>
+
+    <!-- Contact -->
+    <h2>Contact Us</h2>
+    <p>📞 +91 9876543210</p>
+    <p>📧 restaurant@email.com</p>
+
+    <!-- Location -->
+    <h2>Our Location</h2>
+    <p>Jaipur, Rajasthan, India</p>
+
+    <!-- Timing -->
+    <table border="1">
+        <tr>
+            <th>Day</th>
+            <th>Time</th>
+        </tr>
+        <tr>
+            <td>Monday - Sunday</td>
+            <td>10:00 AM - 11:00 PM</td>
+        </tr>
+    </table>
+
+    <!-- Feedback Form -->
+    <h2>Feedback Form</h2>
+
+    <form>
+        <input type="text" placeholder="Your Name">
+
+        <br><br>
+
+        <textarea placeholder="Your Feedback"></textarea>
+
+        <br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <!-- Music -->
+    <audio controls loop>
+        <source src="restaurant.wav" >
+    </audio>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html
